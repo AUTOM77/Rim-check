@@ -1,0 +1,13 @@
+[package]
+name = "rim-check"
+version = "0.0.1"
+edition = "2021"
+
+[dependencies]
+clap = { version= "4.5.6", features=["derive"] }
+kdam = { version= "0.5.2", features=["rich", "spinner", "rayon"] }
+toml = "0.8.14"
+
+[[bin]]
+name = "rc"
+path = "src/main.rs"
